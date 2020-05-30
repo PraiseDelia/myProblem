@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // for the first bank 
+        var p = 100000; var t = 2; var r = 0.1;
+        var Bank1 = (p*t*r)
+
+        // for the second bank
+        var Cal = p*((1+(r))**t)
+        var Bank2 = Cal - p
+
+        // to determine the bank with lower charges
+        if (Bank1 > Bank2) {
+            alert("I strongly advice that you choose the second bank")
+        }
+        else {
+            alert("I srtongly advice that you go for the first bank")
+        }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
