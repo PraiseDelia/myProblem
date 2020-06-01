@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.write("Hello astronauts, calculations have been carried to ensure that you survive this journey to Mars. Here they are: <br> ")
+        //number of hours to get mars from earth
+        var distance = 152000000
+        var speed_of_ship = 1000
+        var hours = distance/speed_of_ship
+
+        /* but they have to wait for a revolution and then move on without the ship
+        To find the total number of hours*/
+        var revolution = 24.6
+        var total = hours + revolution
+        document.write(`1.  Mars completes a revolution in 24.6 hours. <br> 2. This means that it'll take you about ${total} hours to get to Mars <br>`)
+
+        // since 1 liter = 12 hours, to find how many liters of oxygen to get to mars//
+        var find = Math.round(total/12)
+        document.write(`3.  Now each of you will need ${find} liters of compressed oxygen to get to mars <br>`)
+
+        // amount of oxygen going and coming back safely for the 10 astronauts
+        var success = (find*2)*10
+        document.write(`<b>4. NAAS is going to supply you with ${success} liters of compressed oxygen so that the 10 of you can go and come back safely</b>`) 
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
