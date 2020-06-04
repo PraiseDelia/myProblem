@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var bank1 = {
+            principal: 1000000,
+            time: 2,
+            rate: 0.1,
+        } 
+        var bank2 = {
+            rate1: 0.025,
+        }
+        var bankSum = bank1.principal*bank1.rate*bank1.time
+        var bankAdd = bank1.principal*((1+(bank2.rate1))**bank1.time)
+        var bankDiff = bankAdd - bank1.principal
+
+        if (bankSum > bankAdd) {
+            alert("I strongly advice that you choose the second bank")
+        }
+        else {
+            alert("I srtongly advice that you go for the first bank")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
