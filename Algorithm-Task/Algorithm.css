@@ -1,0 +1,24 @@
+.container{
+    background-color: cornflowerblue;
+    margin: auto;
+    padding: 10px 0;
+    height: 500px;
+    
+   
+}
+.content{
+   background-color: rgb(217, 226, 241);
+   margin: 0px 20px 0px 20px;
+   padding: 5%;
+}
+#input-box{/* for the input boxes*/
+    margin-left: 2%;
+    margin-top: 2%;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    width: 40%;
+    padding: 2%;
+    box-sizing: border-box;
+    
+}
